@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .big_box {
+      padding: 20px;
+      border: 1px solid black;
+      width: 500px;
+      height: 240px;
+    }
+    .first_line {
+      height: 120px;
+      line-height: 120px;
+    }
+    .first_line > img {
+      padding-left: 10px;
+      width: 120px;
+      height: 170;
+    }
+    .first_line > h2 {
+      margin: 0;
+      float: right;
+    }
+    .second_line {
+      margin-top: 10px;
+      padding-left: 10px;
+      height: 90px;
+    }
+    .left_name {
+      float: left;
+    }
+    h3 {
+      padding-left: 10px;
+      margin-bottom: 0;
+    }
+    h4 {
+      margin-top: 0;
+    }
+    .right_name {
+      float: right;
+    }
+    .phone_num {
+      margin-bottom: 0;
+    }
+    .email {
+      margin-top: 0;
+    }
+    .last_line {
+      float: right;
+    }
+    .last_line > p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="big_box">
+    <div class="first_line">
+      <img src="profile.jpg" alt="Profile Image">
+      <h2>Company Name</h2>
+    </div>
+    <div class="second_line">
+      <div class="left_name">
+        <h3>한글 이름</h3>
+        <h4>English Name</h4>
+      </div>
+      <div class="right_name">
+        <p class="phone_num">Phone Number</p>
+        <p class="email">Email</p>
+      </div>
+    </div>
+    <hr>
+    <div class="last_line">
+      <p>description</p>
+    </div>
+  </div>
+</body>
+</html>
