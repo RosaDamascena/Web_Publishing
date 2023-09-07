@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .first{
+            display: flex;
+            background-color: rgb(63, 63, 63);
+            justify-content: space-between;
+            align-items: center;
+        }
+        .second{
+            display: flex;
+            background-image: url(images/header.jpg);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .second div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .third{
+            display: flex;
+            background-image: url(images/header.jpg);
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: aliceblue;
+            background-image: none;
+        }
+        .third img{
+            width: 200px;
+            height: 200px;
+        }
+        .third div{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            align-items: baseline;
+        }
+    </style>
+</head>
+  <body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <div class="first">
+        <img width="120px" height="50px"  src="images/logo.png" alt="">
+        <ul class="nav justify-content-end " style="font-weight: bold;" >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" style="color: aliceblue;" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "style="color: aliceblue;" href="#">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: aliceblue;">Login</a>
+            </li>
+          </ul>
+    </div>
+    <div class="second">
+        <div style="height: 700px; width: 1080px; font-weight: bold;">
+            <p style="color: aliceblue; font-size: 65px;">Cinema </p>
+            <p style="color: aliceblue; font-size: 65px;">Community </p>
+            <input class="btn btn-primary" type="button" value="Let's Go">
+    </div>
+    </div>
+    <div class="third">
+        <p style="font-size: 50px;">Used skills</p>
+        <div style="height: 300px; width: 1080px; font-weight: bold;">
+            <img src="images/web.png" alt="">
+            <img src="images/html5.png" alt="">
+            <img src="images/css3.png" alt="">
+        </div>
+    </div>
+
+ </body>
+</html>
