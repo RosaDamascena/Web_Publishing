@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- div와 똑같은 기능을 하지만 의미론적 태그는 header로 영역 구분 -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg bg-white p-0">
+        <div class="container-fluid px-4">
+          <a class="navbar-brand" href="#"><img src="ssafy_logo.PNG"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav w-100 mb-2 mb-lg-0 justify-content-around">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">마이 캠퍼스</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">강의실</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">커뮤니티</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">HELP DESK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">멘토링 게시판</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">알람 이모티콘</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  나의 정보
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">회원정보</a></li>
+                  <li><a class="dropdown-item" href="#">로그아웃</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-none d-lg-flex fw-bold">
+              <div class="nav-box bg-secondary text-white">
+                Job SSAFY
+                <hr class="border border-white border-2">
+              </div>
+              <div class="nav-box bg-primary text-white">
+                SSAFY GIT
+                <hr class="border border-white border-2">
+              </div>
+              <div class="nav-box bg-success text-white">
+                Meeting SSAFY
+                <hr class="border border-white border-2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <hr class="m-0">
+    </header>
+    <main class="container mt-5">
+      <section class="main-box-size row justify-content-evenly">
+        <!-- 출석 -->
+        <div class=" col-12 col-lg-4 bg-warning p-4">
+          <div class="main-box-title d-flex justify-content-between mb-2">
+            <h3 class="h3 m-0 my-auto">출석체크 & 현황</h3>
+            <button class="border-0 bg-transparent p-0 fs-2">+</button>
+          </div>
+          <div class="main-box-body row mt-5">
+            <!-- 날짜 & 요일 -->
+            <div class="col-4 text-primary">
+              <h4 class="fw-bold">09.07</h4>
+              <h4 class="fw-bold">목요일</h4>
+            </div>
+            <!-- 오른쪽 버튼 -->
+            <div class="col-6 offset-2">
+              <button class="btn btn-sm btn-light btn-height-100">입실하기</button>
+              <button class="btn btn-sm btn-light btn-height-100">퇴실하기</button>
+            </div>
+          </div>
+        </div>
+        <!-- 마일리지 -->
+        <div class="col-12 col-lg-7 bg-primary row p-4 text-white">
+          <div class="col-6">
+            <h4>마일리지</h4>
+            <h4>레벨 & 경험치</h4>
+          </div>
+          <div class="vr p-0"></div>
+          <div class="col-5">
+            <h4>알림</h4>
+          </div>
+        </div>
+      </section>
+      <!-- 커리큘럼 -->
+      <section>
+
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
