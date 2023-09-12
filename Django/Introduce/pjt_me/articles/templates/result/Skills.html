@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
-    <title>About Me</title>
+    <title>Skills</title>
     <style>
+      
+
+      li::marker {
+        content: url(../assets/heart-solid.svg);
+      }
+
       h1 {
         margin: 20px;
       }
-
+      
       .ME {
         margin: 0;
         padding: 0;
-      }
-
-      .main {
-        margin: 20px;
       }
     </style>
   </head>
@@ -54,39 +56,51 @@
     </nav>
     <header class="header">
       <h1 class="fw-bold">
-        About Me
+        Skills
         <i class="fas fa-laptop-code" style="color: #ffffff;"></i>
       </h1>
     </header>
     <main class="main">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="../assets/profile.jpg" class="img-fluid rounded-start" alt="profile">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <ul>
-                <li>
-                  이름 : 한성주
-                </li>
-                <li>
-                  전화번호 : 010-5636-4852
-                </li>
-                <li>
-                  주소 : SSAFY
-                </li>
-                <li>
-                  이메일 : hsj990604@gmail.com
-                </li>
-                <li>
-                  깃허브 주소 : <a href="https://github.com/RosaDamascena" target="_blank">https://github.com/RosaDamascena</a>
-                </li>
-              </ul>
+      <article class="skills">
+        <div>
+          <ul>
+            <li>
+              HTML
+            </li>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 80%">80%</div>
             </div>
-          </div>
+            <br>
+            <li>
+              CSS
+            </li>
+            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-success" style="width: 75%">75%</div>
+            </div>
+            <br>
+            <li>
+              JS
+            </li>
+            <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info" style="width: 50%">50%</div>
+            </div>
+            <br>
+            <li>
+              Python
+            </li>
+            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning" style="width: 80%">80%</div>
+            </div>
+            <br>
+            <li>
+              Database
+            </li>
+            <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-danger" style="width: 45%">45%</div>
+            </div>
+          </ul>
         </div>
-      </div>
+      </article>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
