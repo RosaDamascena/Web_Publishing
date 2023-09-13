@@ -2,18 +2,34 @@
 ------
 
 ## &rarr; practice 1
-### /article/ 경로로 연결되었을 때 pages/index.html 열기
+- /dinner/ 경로로 연결되었을 때 저녁 메뉴판이 나오도록 하기
+- apps/dinner.html 연결
 
-![Alt text](articles_page.PNG)
+![Alt text](dinner.PNG)
 
 ## &rarr; practice 2
-### /pages/ 경로로 연결되었을 때 pages/index.html 열기
-### 같은 파일을 여러 url 방식으로 표현하기
+- /search/ 경로로 연결되었을 때 검색어 입력 시 실제네이버 검색창 연결
+- apps/search.html 연결
 
-![Alt text](pages_page.PNG)
+![Alt text](search.PNG) 
+![Alt text](search_result.PNG) 
 
 ## &rarr; practice 3
-### /articles/<int:number>/ 경로일 때 articles/random_number.html 열기
-### 다음페이지 버튼을 눌렀을 때 숫자가 1씩 증가하는 페이지 만들기
+- /throw/ 경로로 연결되었을 때 메세지 입력창 연결
+- 메세지 입력 창인 apps/throw.html 연결
+- 메세지 입력 후 제출시 결과인 apps/catch.html 연결
 
-![Alt text](random_num.PNG)
+![Alt text](throw.PNG) 
+![Alt text](throw_result.PNG) 
+
+## &rarr; practice 4
+- /hello/<name>/ 경로 연결 시 hello, <name> 출력 페이지
+- apps/greeting.html 연결
+
+![Alt text](hello_name.PNG) 
+
+## &rarr; practice 5
+- /apps/<int:num>/ 경로일 때 num번 게시글 페이지 연결
+- apps/detail.html 연결
+
+![Alt text](apps_num.PNG)

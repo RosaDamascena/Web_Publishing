@@ -1,2 +1,9 @@
 # Web_Publishing
-Practice web_publishing for developing frontend skills
+-----
+
+## &rarr; Check List
+- [x] html/css
+- [ ] javascript
+- [x] Django
+- [ ] React
+- [x] Bootstrap
