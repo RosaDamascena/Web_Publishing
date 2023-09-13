@@ -3,9 +3,9 @@
 
 ## &rarr; /books/ 경로로 요청 시 모든 책 정보 화면에 표기
 <br>
-![Alt text](image.png)
+![Alt text](book_list.PNG)
 
 
 ## &rarr; 각 작성자 이름 클릭시, 작성자 상세 정보 페이지 이동
 <br>
-![Alt text](image-1.png)
+![Alt text](author.PNG)
