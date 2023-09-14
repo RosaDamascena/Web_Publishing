@@ -211,6 +211,7 @@ admin.site.register(Article)
 
 ### &rarr; Migrations 기타 명령어
 
+1. 
 
 ```bash
 $ python manage.py showmigrations
@@ -220,6 +221,9 @@ $ python manage.py showmigrations
 - 결과
 
 ![Alt text](src/showmigrrations.PNG)
+
+
+2.
 
 ```bash
 $ python manage.py sqlmigrate articles 0001
