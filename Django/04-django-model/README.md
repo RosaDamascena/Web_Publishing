@@ -205,6 +205,7 @@ admin.site.register(Article)
 - 이 외에 다른 것은 삭제하지 않도록 주의해야 함
 
 ![Alt text](src/db_init.PNG)
+
 ![Alt text](src/db_init2.PNG)
 
 
@@ -217,6 +218,7 @@ $ python manage.py showmigrations
 - migrations 파일들이 migrate 됐는지 안됐는지 여부를 확인하는 명령어
 - `[x]` 표시가 있으면 migrate가 완료되었음을 의미
 - 결과
+
 ![Alt text](src/showmigrrations.PNG)
 
 ```bash
