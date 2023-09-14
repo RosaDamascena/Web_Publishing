@@ -156,3 +156,49 @@ admin.site.register(Article)
 ### &rarr; 테이블 확인
 
 ![Alt text](src/sql_articel.PNG)
+
+
+## 4. 참고
+
+### &rarr; 데이터베이스 초기화
+
+- migration 파일 삭제
+- db.sqlite3 파일 삭제
+- 이 외에 다른 것은 삭제하지 않도록 주의해야 함
+
+![Alt text](src/db_init.PNG)
+![Alt text](src/db_init2.PNG)
+
+### &rarr; Migrations 기타 명령어
+
+```bash
+$ python manage.py showmigrations
+```
+- migrations 파일들이 migrate 됐는지 안됐는지 여부를 확인하는 명령어
+- `[x]` 표시가 있으면 migrate가 완료되었음을 의미
+- 결과
+![Alt text](src/showmigrrations.PNG)
+
+```bash
+$ python manage.py sqlmigrate articles 0001
+```
+- 해당 migrations 파일이 SQL 언어(DB에서 사용하는 언어)로 
+어떻게 번역되어 DB에 전달되었는지 확인하는 명령
+- 결과
+
+![Alt text](src/sqlmigrate.PNG)
+
+### &rarr; 첫 migrate 시 출력 내용이 많은 이유
+
+- Django 프로젝트가 동작하기 위해 미리 작성되어 있는 기본 내장 app들에 대한 migration 파일들이 함께 migrate 되기 때문
+
+### &rarr; SQLite
+- 데이터베이스 관리 시스템 중 하나이며 Django의 기본 데이터베이스로 사용됨
+- 파일로 존재하며 가볍고 호환성이 좋음
+
+### &rarr; CRUD
+- 소프트웨어가 가지는 기본적인 데이터 처리 기능
+- Create : 저장
+- Read : 조회
+- Update : 갱신
+- Delete : 삭제
