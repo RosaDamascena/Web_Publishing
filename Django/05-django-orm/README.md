@@ -62,7 +62,11 @@
 1. 외부 라이브러리 설치
 
     ```bash
+    # python 코드에 색 넣어주는 기능
     $ pip install ipython
+
+    # shell_plus 사용을 하기 위해
+    # 자동완성, 기본적인 메서드 import 해주는 기능
     $ pip install django-extensions
     ```
 
