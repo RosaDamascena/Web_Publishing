@@ -233,3 +233,11 @@ article.save()
     - 이를 해결하기 위해서는 유효성 검사가 필요하다.
 
     ![Alt text](src/next_time.PNG)
+
+<br>
+
+- DB 불러오기
+    - 만들어둔 DB를 불러와 화면에 출력한다.
+    - 조회를 통해 DB를 활용한다.
+
+    ![Alt text](src/main_page.PNG)
