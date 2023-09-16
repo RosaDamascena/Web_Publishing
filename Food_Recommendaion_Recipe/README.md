@@ -7,3 +7,7 @@
 - 관련 교과목 : 파이썬웹프로그래밍
 - 역할 : 코드 구현 및 결과 페이지 디자인
 - 기간 : 2023년 5월 ~ 2023년 6월
+
+![Alt text](static/result1.png)
+
+![Alt text](static/result2.png)
