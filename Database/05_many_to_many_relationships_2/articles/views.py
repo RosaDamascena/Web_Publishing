@@ -39,13 +39,15 @@ def delete(request, article_pk):
     return redirect('main')
 
 def likes(request, article_pk):
+    if request.user.is_authenticated:
     # 특정 게시글과 요청 보낸 유저의 M:N 관계를 생성
-    article = Article.objects.get(pk=article_pk)
-    
-    if request.user in article.like_users.all():
-        # 이미 관계를 맺고 있는 상태에서 온 M:N 관계 관련 요청
-        # 관계 해제 요청
-        article.like_users.remove(request.user)
-    else:
-        article.like_users.add(request.user)
-    return redirect('main')
+        article = Article.objects.get(pk=article_pk)
+        
+        if request.user in article.like_users.all():
+            # 이미 관계를 맺고 있는 상태에서 온 M:N 관계 관련 요청
+            # 관계 해제 요청
+            article.like_users.remove(request.user)
+        else:
+            article.like_users.add(request.user)
+        return redirect('main')
+    return redirect('accounts:login')
