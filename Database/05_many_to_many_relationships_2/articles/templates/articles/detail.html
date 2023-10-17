@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Detail Page</h1>
+  <p>{{ article.pk }}번째 게시글</p>
+  <p>{{ article.title }}</p>
+  <hr>
+  <p>{{ article.created_at }}</p>
+  <p>{{ article.updated_at }}</p>
+  <p>{{ article.username }}</p>
+  <hr>
+  <p>내용</p>
+  <p>{{ article.content }}</p>
+
+  <form action="{% url "articles:delete" article.pk %}" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="게시글 삭제">
+  </form>
+{% endblock content %}
