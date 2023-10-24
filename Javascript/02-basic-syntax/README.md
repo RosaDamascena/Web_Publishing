@@ -192,7 +192,7 @@ console.log('1' == 1) // false
 console.log(0 == false) // false
 ```
 
-### ▶︎ 논리 연산자 (===)
+### ▶︎ 논리 연산자
 
 - and 연산
   - &&
