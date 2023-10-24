@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let number = 10
+    number = 20   // 재할당 가능
+
+    // console.log(number)
+
+    // let number = 30 재선언 불가능
+
+    const num = 10
+    // num = 20    재할당 불가능
+    // console.log(num)
+
+    // const num =20  재선언 불가능
+
+    // 블록 스코프
+    let x = 1
+    if (x === 1) {
+      let x = 2
+
+      console.log(x)
+    }
+    console.log(x)
+
+    const age = 100
+    const message = `홍길동은 ${age}살 입니다.`
+    console.log(message)
+
+
+  </script>
+</body>
+
+</html>
