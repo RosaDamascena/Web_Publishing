@@ -9,7 +9,7 @@
     .active {
       color: crimson;
     }
-
+    
     .text-primary {
       color: blue;
     }
@@ -19,13 +19,13 @@
 <body>
   <div id="app">
     <!-- Binding to Objects -->
-    <div>Text</div>
-    <div class="static">Text</div>
-    <div class="static">Text</div>
+    <div :class="{ active: isActive }">Text</div>
+    <div class="static" :class="{ active: isActive, 'text-primary': hasInfo}">Text</div>
+    <div class="static" :class="classObj">Text</div>
 
     <!-- Binding to Arrays -->
-    <div>Text</div>
-    <div>Text</div>
+    <div :class="[activeClass, infoClass]">Text</div>
+    <div :class="[{active: isActive}, infoClass]">Text</div>
   </div>
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -34,7 +34,22 @@
 
     const app = createApp({
       setup() {
-        return {}
+        const hasInfo = ref(true)
+        const isActive = ref(true)
+        const classObj = ref({
+          active: isActive, 
+          'text-primary': hasInfo
+        })
+        const activeClass = ref('active')
+        const infoClass = ref('text-primary')
+
+        return {
+          hasInfo,
+          isActive,
+          classObj,
+          activeClass,
+          infoClass,
+        }
       }
     })
 

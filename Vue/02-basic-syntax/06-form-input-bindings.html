@@ -9,6 +9,13 @@
 
 <body>
   <div id="app">
+    <!-- 한글은 이 방법 사용 권장! -->
+    <p>{{ inputText1 }}</p>
+    <input type="text" @input="onInput" :value="inputText1">
+
+    <!-- 영어일 때 사용 권장 -->
+    <p>{{ inputText2 }}</p>
+    <input type="text" v-model="inputText2">
   </div>
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -17,7 +24,16 @@
 
     const app = createApp({
       setup() {
-        return {}
+        const inputText1 = ref('')
+        const inputText2 = ref('')
+        const onInput = function(event) {
+          inputText1.value = event.currentTarget.value
+        }
+        return {
+          inputText1,
+          inputText2,
+          onInput
+        }
       }
     })
 
