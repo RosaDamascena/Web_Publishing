@@ -353,4 +353,19 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+### react ###
+.DS_*
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+
 # End of https://www.toptal.com/developers/gitignore/api/venv,visualstudiocode,django,python,windows,macos
